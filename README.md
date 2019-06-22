@@ -25,7 +25,7 @@ npm i @thadeu/nanomachine
 or unpkg load script
 
 ```html
-<a href="https://unpkg.com/@thadeu/nanomachine">https://unpkg.com/@thadeu/nanomachine</a>
+<script src="https://unpkg.com/@thadeu/nanomachine"></script>
 ```
 
 # Usage
