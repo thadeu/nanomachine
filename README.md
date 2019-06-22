@@ -8,7 +8,7 @@
 
 ---
 
-🔐 nanomachine is a `state machine` for tiny JS
+🔐 nanomachine is a state machine for tiny JS
 
 # Usage
 
@@ -32,29 +32,29 @@ const machine = nanomachine({
 })
 ```
 
-Com uma máquina de estado iniciada, você tem acesso aos métodos criados dinamicamente. Como por exemplo.
+With a state machine started, you have access to dynamically created methods. Like for example.
 
-Caso você queira sair de `login` e ir para `waiting`, você pode usar.
+If you want to leave login and go to waiting, you can use.
 
 ```js
 // state is login, right?
 machine.waiting()
 ```
 
-Tudo se baseia na transição do `from` para o `to` nas transações configuradas.
+Everything is based on the transition `from` to `to` was configured
 
 ```js
 { name: 'waiting', from: ['login', 'unpause'], to: 'waiting' }
 ```
 
-No caso acima, dizemos que `waiting`, poderá transitar de `login` ou `unpause` para `waiting`.
-Isso claro, só vai acontecer se existir um método criado em `events`, com o mesmo nome exemplo:
+In the case above, we say, `waiting`, you can transition from `login` or `pause` to `waiting`
+Of course, it will only happen, if there is a method created in events.
 
 ```js
 { name: 'waiting', from: ['login', 'unpause'], to: 'waiting' }
 ```
 
-A transição acima deve possuir um `method(callback)` para ser acionado ao transitar.
+The above transition must have a method to be triggered when moving
 
 ```js
 events: {
@@ -62,11 +62,11 @@ events: {
 }
 ```
 
-O evento `waiting` será invocado, sempre que a transição for aprovada no fluxo da máquina de estado.
+The waiting event, will be invoked whenever the transition is approved in the state machine
 
 # Conditionals
 
-Imagine a seguinte situação, você precisa mudar de estado, apenas após a resolução de algo. Então veja a transitions como ficaria nesse caso.
+Imagine the following situation, you need to change state, only after resolving something. So!
 
 ```js
 const machine = nanomachine({
@@ -79,25 +79,15 @@ const machine = nanomachine({
 })
 ```
 
-Notou a funcão `if` ?
-
-```js
-{ name: 'waiting', from: ['login', 'unpause'], to: 'waiting', if: () => true }
-```
-
-Caso a transição seja aprovado, o `if` será verificado também. E a transição só será aceita em caso de sucesso da condição.
-
-Pode-se usar também o `unless`.
+or use `unless`.
 
 ```js
 { name: 'waiting', from: ['login', 'unpause'], to: 'waiting', unless: () => true }
 ```
 
-Isso indicaria que, `waiting`, seria invocado sempre, a não ser que, `unless`, seja `true`
-
 # On Any Transition
 
-Você também pode criar observadores, exemplo:
+You can use observers, for example
 
 ```js
 const machine = nanomachine({
@@ -109,7 +99,7 @@ machine.on('waiting', function() {
 })
 ```
 
-Sempre que uma transição `waiting` ocorrer, esse observador recebe uma mensagem.
+Whenever a `waiting` transitions occurs, this observer receives a message
 
 # Contributing
 
