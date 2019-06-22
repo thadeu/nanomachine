@@ -22,6 +22,12 @@ or
 npm i @thadeu/nanomachine
 ```
 
+or unpkg load script
+
+```html
+<a href="https://unpkg.com/@thadeu/nanomachine">https://unpkg.com/@thadeu/nanomachine</a>
+```
+
 # Usage
 
 ---
