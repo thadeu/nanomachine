@@ -15,7 +15,7 @@
     "test:watch": "mocha --require babel-core/register \"test/**/*.test.js\" --watch",
     "preversion": "npm run test",
     "version": "rm -rf dist && npm run build && git add -A dist",
-    "postversion": "git push origin master && git push --tags && rm -rf dist"
+    "postversion": "git push origin master && git push --tags"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
