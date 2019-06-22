@@ -50,16 +50,17 @@ Everything is based on the transition `from` to `to` was configured
 In the case above, we say, `waiting`, you can transition from `login` or `pause` to `waiting`
 Of course, it will only happen, if there is a method created in events.
 
-```js
-{ name: 'waiting', from: ['login', 'unpause'], to: 'waiting' }
-```
-
-The above transition must have a method to be triggered when moving
+The above transition must have a method to be triggered when moving, example:
 
 ```js
-events: {
-  waiting: () => console.log('fired waiting')
-}
+const machine = nanomachine({
+  ......
+  events: {
+    waiting: () => console.log('fired waiting')
+  }
+  ......
+})
+
 ```
 
 The waiting event, will be invoked whenever the transition is approved in the state machine
