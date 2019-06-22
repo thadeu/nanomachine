@@ -11,7 +11,7 @@
   "scripts": {
     "build": "microbundle src/nanomachine.js",
     "dev": "microbundle watch",
-    "test": "npm run -s build && mocha --require babel-core/register test",
+    "test": "mocha --require babel-core/register test",
     "test:watch": "mocha --require babel-core/register \"test/**/*.test.js\" --watch",
     "preversion": "npm run test",
     "version": "rm -rf dist && npm run build && git add -A dist",
