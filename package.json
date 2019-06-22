@@ -1,6 +1,6 @@
 {
   "name": "@thadeu/nanomachine",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "🔐 nanomachine is a state machine for tiny JS with < 2 Bytes",
   "author": "Thadeu Esteves<tadeuu@gmail.com>",
   "license": "MIT",
