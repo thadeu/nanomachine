@@ -2,13 +2,13 @@
 
 [![NPM package version](https://img.shields.io/npm/v/@thadeu/nanomachine.svg)](https://www.npmjs.com/package/@thadeu/nanomachine)
 [![Build Status](https://travis-ci.org/thadeu/nanomachine.svg?branch=master)](https://travis-ci.org/thadeu/nanomachine)
-![Minified size](http://img.badgesize.io/thadeu/nanomachine/master/dist/nanomachine.min.js.svg?label=min+size)
-![Minified+Gzip size](http://img.badgesize.io/thadeu/nanomachine/master/dist/nanomachine.min.js.svg?compression=gzip&label=min%2Bgzip+size)
-![License: MIT](https://img.shields.io/npm/l/@thadeu/nanomachine.svg)
+![Size](https://img.shields.io/github/size/thadeu/nanomachine/dist/nanomachine.js.svg)
+![Issues](https://img.shields.io/github/issues/thadeu/nanomachine.svg)
+![License: MIT](https://img.shields.io/github/license/thadeu/nanomachine.svg)
 
 ---
 
-🔐 nanomachine is a `state machine` for tiny JS with < 1Kb
+🔐 nanomachine is a `state machine` for tiny JS
 
 # Usage
 
