@@ -10,6 +10,18 @@
 
 🔐 nanomachine is a state machine for tiny JS
 
+# How to install
+
+```bash
+yarn add @thadeu/nanomachine
+```
+
+or
+
+```bash
+npm i @thadeu/nanomachine
+```
+
 # Usage
 
 ---
